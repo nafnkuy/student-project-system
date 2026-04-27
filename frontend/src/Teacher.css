@@ -1,0 +1,46 @@
+.teacher-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #3d6ea8;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logout-btn {
+  background: #ddd;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.main {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+.content-box {
+  margin-top: 20px;
+  background: #f8f8f8;
+  height: 80%;
+  border-radius: 12px;
+}
