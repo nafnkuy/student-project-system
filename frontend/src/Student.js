@@ -1,7 +1,12 @@
 import "./Student.css";
 
 function Student() {
-  const user = JSON.parse(localStorage.getItem("user"));
+const user = JSON.parse(localStorage.getItem("user"));
+
+if (!user || user.role !== "student") {
+  window.location.href = "/";
+  return null;
+}
 
   return (
     <div className="student-layout">
