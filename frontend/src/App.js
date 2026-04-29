@@ -7,10 +7,10 @@ import Student from "./Student"; // import หน้า Student
 function App() {
   // สร้าง component หลักของแอป
   return (
-    <Routes> //กำหนดเส้นทางของแต่ละหน้า
-      <Route path="/" element={<Login />} /> //ถ้า URL = / ให้แสดงหน้า Login
-      <Route path="/teacher" element={<Teacher />} /> // ถ้า URL = /teacher ให้แสดงหน้า Teacher
-      <Route path="/student" element={<Student />} /> //ถ้า URL = /student ให้แสดงหน้า Student
+    <Routes> {/* กำหนดเส้นทางของแต่ละหน้า */}
+      <Route path="/" element={<Login />} /> {/* ถ้า URL = / ให้แสดงหน้า Login */}
+      <Route path="/teacher" element={<Teacher />} /> {/* ถ้า URL = /teacher ให้แสดงหน้า Teacher */}
+      <Route path="/student" element={<Student />} /> {/* ถ้า URL = /student ให้แสดงหน้า Student */}
     </Routes>
   );
 }
