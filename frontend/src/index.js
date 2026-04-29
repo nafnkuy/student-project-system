@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-//import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import React from 'react'; // import React  
+import ReactDOM from 'react-dom/client'; // import สำหรับ render React ลง DOM (หน้าเว็บจริง)
+import './index.css'; // import CSS หลักของทั้งแอป
+import App from './App'; // import component หลักของระบบ (ตัวที่รวมทุกหน้า)
+import { BrowserRouter } from "react-router-dom"; // import Router สำหรับจัดการ URL / หน้าเว็บ (SPA)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

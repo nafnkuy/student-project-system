@@ -1,11 +1,11 @@
-import "./Student.css";
+import "./Student.css"; // import CSS
 
-function Student() {
+function Student() { // สร้าง component Student
 const user = JSON.parse(localStorage.getItem("user"));
-
-if (!user || user.role !== "student") {
-  window.location.href = "/";
-  return null;
+// ดึงข้อมูล user จาก localStorage แล้วแปลง JSON → object
+if (!user || user.role !== "student") { // ถ้าไม่มี user หรือ role ไม่ใช่ student
+  window.location.href = "/"; // redirect กลับหน้า login
+  return null; // ไม่ render อะไรเลย
 }
 
   return (
@@ -20,8 +20,8 @@ if (!user || user.role !== "student") {
         <button
           className="student-logout"
           onClick={() => {
-            localStorage.clear();
-            window.location.href = "/";
+            localStorage.clear(); // ลบข้อมูลทั้งหมดใน localStorage
+            window.location.href = "/"; // กลับหน้า login
           }}
         >
           Log out

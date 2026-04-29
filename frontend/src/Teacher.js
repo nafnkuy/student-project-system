@@ -1,10 +1,10 @@
 import "./Teacher.css";
 
-function Teacher() {
-const user = JSON.parse(localStorage.getItem("user"));
+function Teacher() { // สร้าง component Teacher
+const user = JSON.parse(localStorage.getItem("user")); // ดึง user จาก localStorage
 
-if (!user || user.role !== "teacher") {
-  window.location.href = "/";
+if (!user || user.role !== "teacher") { // ถ้าไม่มี user หรือ role ไม่ใช่ teacher
+  window.location.href = "/"; // redirect กลับ login
   return null;
 }
 
@@ -19,8 +19,8 @@ if (!user || user.role !== "teacher") {
         <button
           className="logout-btn"
           onClick={() => {
-            localStorage.clear();
-            window.location.href = "/";
+            localStorage.clear(); // ลบข้อมูล user
+            window.location.href = "/"; // กลับหน้า login
           }}
         >
           Log out
